@@ -1,25 +1,134 @@
+<meta charset="utf-8">
 <html>
   <head>
-    <link rel="stylesheet" href="semantic/semantic.css"/>
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.1/basic/jquery.qtip.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,300' type='text/css'>
+    <link rel='stylesheet' href='css/style.css' />
+    <title>Daniel Voina @ ...</title>
   </head>
   <body>
-    <nav class="ui fixed menu inverted navbar">
-      <a href="" class="brand item">Daniel Voina</a>
-      <a href="" class="active item">About</a>
-      <a href="" class="item">Work</a>
-      <a href="" class="item">Contact</a>
-    </nav>
-    <main class="ui page grid">
-        <div class="row">
-            <div class="center aligned starter column">
-                <h1 class="ui header">Daniel Voina's Page</h1>
-                <p></p>
-                <p></p>
-            </div>
-        </div>
-    </main>
+    <article class="main">
+      <header class="title">
+        <h1>Daniel Voina</h1>
+        <h2>Software Engineer</h2>
+      </header>
+      <aside>
+        <ul>
+          <li class="social-icon">
+            <a href="http://stackoverflow.com/users/400026/daniel-voina">
+              <i class="fa fa-stack-overflow fa-2x">
+              </i>
+            </a>
+          </li>
+          <li class="social-icon">
+            <a href="https://www.linkedin.com/in/danielvoina">
+              <i class="fa fa-linkedin fa-2x">
+              </i>
+            </a>
+          </li>
+          <li class="social-icon">
+            <a href="https://github.com/dvoina">
+              <i class="fa fa-github fa-2x">
+              </i>
+            </a>
+          </li>
+          <li class="social-icon">
+            <a href="https://www.bitbucket.org/dsva">
+              <i class="fa fa-bitbucket fa-2x">
+              </i>
+            </a>
+          </li>
+          <li class="social-icon">
+            <a href="mailto:dvoina@outlook.com">
+              <i class="fa fa-envelope fa-2x">
+              </i>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <footer class="footer">
+        <div class="skills">
+          <ul>
+            <li id="skill-cloud" class="social-icon" data-tooltip="I work within clouds: Cirrus, Stratus, AWS...">
+              <a href="#">
+                <i class="fa fa-cloud fa-2x">
+                </i>
+              </a>
+            </li>
+            <li id='skill-telecom' class="social-icon" data-tooltip="I used to do telephony (VoIP, SS7) software.">
+              <a href="#">
+                <i class="fa fa-phone-square fa-2x">
+                </i>
+              </a>
+            </li>
+            <li id="skill-server" class="social-icon" data-tooltip="I write mostly server software and I am good with server hardware">
+              <a href="#">
+                <i class="fa fa-server fa-2x">
+                </i>
+              </a>
+            </li>
+            <li class="social-icon" data-tooltip="Linux addicted since 1996 (Kernel 2.0.18)">
+              <a href="#">
+                <i class="fa fa-linux fa-2x">
+                </i>
+              </a>
+            </li>
+            <li id="skill-sun" class="social-icon" data-tooltip="Used to adore Sun (Sparc/Solaris)">
+              <a href="#">
+                <i class="fa fa-sun-o fa-2x">
+                </i>
+              </a>
+            </li>
+            <li class="social-icon" data-tooltip="Occasional stunts in Mobile">
+              <a href="#">
+                <i class="fa fa-android fa-2x">
+                </i>
+              </a>
+            </li>
+            <li class="social-icon" data-tooltip="I deal with Printing and GA">
+              <a href="#">
+                <i class="fa fa-printer fa-2x">
+                </i>
+              </a>
+            </li>
+          </ul>
+        <div>
+      </footer>
+    </article>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.1/basic/jquery.qtip.js">
+    </script>
+    <script>
+    $(function() {
+      var images = {
+        'default': 'url(images/background1.jpg)',
+        'skill-cloud':'url(images/background2.jpg)',
+        'skill-sun':'url(images/background3.jpg)',
+        'skill-server':'url(images/background4.jpg)',
+        'skill-telecom':'url(images/background5.jpg)'
+        };
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="semantic/semantic.js"></script>
+      $('.skills li').hover(function() {
+        $('.main').css('background-image', images[$(this).attr('id')]);
+      });
+
+      $('.main h1').hover(function() {
+        $('.main').css('background-image', images['default']);
+        $('.skills').css('visibility', 'hidden');
+      });
+
+      $('.main h2').hover(function() {
+        $('.skills').css('visibility', 'visible');
+      });
+
+      $('[data-tooltip!=""]').qtip({
+        content: {
+          attr: 'data-tooltip'
+        }
+      });
+    });
+    </script>
   </body>
 </html>
