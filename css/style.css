@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps);
+@import url(http://fonts.googleapis.com/css?family=Cinzel+Decorative);
+
 .main {
 }
 
@@ -48,16 +51,18 @@ body {
 }
 
 h1 {
-  font-family: Roboto, sans-serif;
+  font-family: 'Bilbo Swash Caps', cursive;
   font-size: 120px;
+  font-style: normal;
+  font-weight: normal;
   color: #eeeeee;
   text-shadow: 3px 3px #0f0f0f;
 }
 
 h2 {
-  font-family: Roboto, sans-serif;
+  font-family: "Cinzel Decorative", sans-serif;
+  font-size: 32px;
   font-style: normal;
-  font-weight:80;
   color: #eeeeee;
   text-shadow: 2px 2px #0f0f0f;
 }
