@@ -1,8 +1,4 @@
 .main {
-  background-image: url("../images/background1.jpg");
-  background-size: 1280px 800px;
-  height: 100%;
-  width: 100%;
 }
 
 .title {
@@ -30,11 +26,11 @@
 }
 
 .social-icon a, .skills a, .social-icon a:visited, .skills a:visited {
-  color: #eeeeee;
+  color: #e0e0e0;
 }
 
 .social-icon a:hover, .skills a:hover {
-  color: #eeffff;
+  color: #fdfdfd;
 }
 
 * {
@@ -45,14 +41,11 @@
     user-select: none;
 }
 
-/*
 body {
-  margin: 0px;
-  width: 1280px;
-  height: auto;
   overflow: hidden;
+  background-image: url("../images/background1.jpg");
+  background-size: 1280px 800px;
 }
-*/
 
 h1 {
   font-family: Roboto, sans-serif;
