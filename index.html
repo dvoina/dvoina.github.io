@@ -9,8 +9,6 @@
   <head>
     <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.1/basic/jquery.qtip.min.css'>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,300' type='text/css'>
-    <!--link rel="stylesheet" href="semantic/semantic.css"/-->
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
     <link rel='stylesheet' href='css/font-mfizz.css' />
     <link rel='stylesheet' href='css/style.css' />
@@ -49,6 +47,9 @@
 
     <script>
     $(function() {
+      $.ajaxSetup ({
+        cache: false
+      });
 
       $('.links').load('links.html');
       $('.skills').load('skills.html');
