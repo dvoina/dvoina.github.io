@@ -47,7 +47,8 @@
 body {
   overflow: hidden;
   background-image: url("../images/background0.jpg");
-  background-size: 1280px 800px;
+  background-size: 100% auto;
+  background-repeat: space;
 }
 
 h1 {
