@@ -11,7 +11,7 @@
 
 body {
   overflow: hidden;
-  background-image: url("../images/background0.jpg") no-repeat center center fixed; 
+  background-image: url("../images/background0.jpg"); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
