@@ -16,15 +16,15 @@
 }
 
 .social-icon {
-  text-shadow: 2px 2px #0f0f0f;
+  margin: 0.9rem;
 }
 
 .social-icon a, .social-icon a:visited {
-  color: #e0e0e0;
+  color: #0f0f0f;
 }
 
 .social-icon a:hover {
-  color: #fdfdfd;
+  color: #801010;
 }
 
 .main {
@@ -33,3 +33,15 @@
   background-repeat: no-repeat;
   background-size: cover;
 } 
+
+.spacer {
+  background-image: url(../images/background1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+.fancy {
+  box-shadow: 2px 2px 2px #aaa;
+  trasform: rotate(10deg);
+}
