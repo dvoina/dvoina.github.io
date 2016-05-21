@@ -139,11 +139,10 @@
             $.ajaxSetup ({ cache: false }); 
             $("#target1").load("details_software.html"); 
             $("#menu button").click(function() { 
-                console.log(this.id); 
                 $("#target1").load("details_" + this.id + ".html"); 
             });
             
-            $("#target2").load("details_noctilucent.html"); 
+            $("#target2").load("clients_noctilucent.html"); 
             $("#clients button").click(function() { 
                 console.log(this.id); 
                 $("#target2").load("clients_" + this.id + ".html"); 
