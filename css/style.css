@@ -39,9 +39,10 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 2em;
 } 
 
 .fancy {
   box-shadow: 2px 2px 2px #aaa;
-  trasform: rotate(10deg);
+  transform: rotate(10deg);
 }
